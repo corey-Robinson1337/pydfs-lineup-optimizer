@@ -46,7 +46,7 @@ class FanDuelFootballSettings(FanDuelSettings):
         LineupPosition('WR', ('WR', )),
         LineupPosition('TE', ('TE', )),
         LineupPosition('FLEX', ('RB', 'WR', 'TE')),
-        LineupPosition('DEF', ('D', )),
+        LineupPosition('D', ('D', )),
     ]
 
 
@@ -75,14 +75,14 @@ class FanDuelBaseballSettings(FanDuelSettings):
     extra_rules = [FanduelBaseballRosterRule]
     positions = [
         LineupPosition('P', ('P',)),
-        LineupPosition('C/1B', ('C', '1B')),
+        LineupPosition('C/1B', ('C/1B', 'C', '1B')),
         LineupPosition('2B', ('2B',)),
         LineupPosition('3B', ('3B',)),
         LineupPosition('SS', ('SS',)),
         LineupPosition('OF', ('OF',)),
         LineupPosition('OF', ('OF',)),
         LineupPosition('OF', ('OF',)),
-        LineupPosition('UTIL', ('1B', '2B', '3B', 'SS', 'C', 'OF')),
+        LineupPosition('UTIL', ('UTIL','1B', '2B', '3B', 'SS', 'C', 'OF')),
     ]
 
 

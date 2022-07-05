@@ -23,10 +23,10 @@ class FanDuelSingleGameFootballSettings(FanDuelSingleGameSettings):
     extra_rules = [FanduelSingleGameMaxQBRule]
     positions = [
         LineupPosition('MVP', ('MVP', )),
-        LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
-        LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
-        LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
-        LineupPosition('UTIL', ('QB', 'WR', 'RB', 'TE', 'K')),
+        LineupPosition('UTIL', ('UTIL', 'QB', 'WR', 'RB', 'TE', 'K')),
+        LineupPosition('UTIL', ('UTIL', 'QB', 'WR', 'RB', 'TE', 'K')),
+        LineupPosition('UTIL', ('UTIL', 'QB', 'WR', 'RB', 'TE', 'K')),
+        LineupPosition('UTIL', ('UTIL', 'QB', 'WR', 'RB', 'TE', 'K')),
     ]
 
 
@@ -38,8 +38,8 @@ class FanDuelSingleGameBasketballSettings(FanDuelSingleGameSettings):
         LineupPosition('MVP', ('MVP', )),
         LineupPosition('STAR', ('STAR', )),
         LineupPosition('PRO', ('PRO', )),
-        LineupPosition('UTIL', ('PG', 'SG', 'SF', 'PF', 'C')),
-        LineupPosition('UTIL', ('PG', 'SG', 'SF', 'PF', 'C')),
+        LineupPosition('UTIL', ('UTIL', 'PG', 'SG', 'SF', 'PF', 'C')),
+        LineupPosition('UTIL', ('UTIL', 'PG', 'SG', 'SF', 'PF', 'C')),
     ]
 
 
@@ -60,12 +60,13 @@ class FanDuelSingleGameLOLSettings(FanDuelSingleGameSettings):
 class FanDuelSingleGameBaseballSettings(FanDuelSingleGameSettings):
     sport = Sport.BASEBALL
     csv_importer = build_fanduel_single_game_importer(mvp=True, star=True, pro=False)
+    budget: 35000
     positions = [
         LineupPosition('MVP', ('MVP', )),
         LineupPosition('STAR', ('STAR', )),
-        LineupPosition('UTIL', ('1B', '2B', '3B', 'SS', 'OF', 'C')),
-        LineupPosition('UTIL', ('1B', '2B', '3B', 'SS', 'OF', 'C')),
-        LineupPosition('UTIL', ('1B', '2B', '3B', 'SS', 'OF', 'C')),
+        LineupPosition('UTIL', ('UTIL', '1B', '2B', '3B', 'SS', 'OF', 'C')),
+        LineupPosition('UTIL', ('UTIL', '1B', '2B', '3B', 'SS', 'OF', 'C')),
+        LineupPosition('UTIL', ('UTIL', '1B', '2B', '3B', 'SS', 'OF', 'C')),
     ]
 
 
