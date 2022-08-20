@@ -60,7 +60,7 @@ class FanDuelSingleGameLOLSettings(FanDuelSingleGameSettings):
 class FanDuelSingleGameBaseballSettings(FanDuelSingleGameSettings):
     sport = Sport.BASEBALL
     csv_importer = build_fanduel_single_game_importer(mvp=True, star=True, pro=False)
-    budget: 35000
+    budget = 35000
     positions = [
         LineupPosition('MVP', ('MVP', )),
         LineupPosition('STAR', ('STAR', )),
